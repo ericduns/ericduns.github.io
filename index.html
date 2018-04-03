@@ -10,17 +10,17 @@
     <h4>I'd love to hear from you!</h4>
   </div>
   <div class="contact-form">
-    <form id="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-    <input name="name" type="text" class="form-control" value="<?php echo $name?;>">
+    <form id="contact-form" method="POST" action="contact-form-handler.php">
+    Name: <input name="name" type="text" class="form-control">
     <span class="error">* <?php echo $nameErr;?></span>
     <br>
-    <input name="email" type="email" class="form-control" value="<?php echo $email;?>">
+    Email: <input name="email" type="email" class="form-control">
     <span class="error">* <?php echo $emailErr;?></span>
     <br>
-    <textarea name="message" class="form-control" rows="5" cols="40"><?php echo $message;?></textarea>
+    Message: <textarea name="message" class="form-control" rows="5" cols="40"></textarea>
     <span class="error">* <?php echo $messageErr;?></span>
     <br>
-    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+    <input type="submit" class="form-control submit" value="Submit">
 
     </form>
   </div>
