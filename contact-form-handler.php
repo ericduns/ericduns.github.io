@@ -1,5 +1,4 @@
 <?php
-  $phpSelf = filter_input(INPUT_SERVER, 'PHP_SELF', FILTER_SANITIZE_URL);
   $name = $email = $message = "";
   $nameErr = $emailErr = $messageErr = "";
 
